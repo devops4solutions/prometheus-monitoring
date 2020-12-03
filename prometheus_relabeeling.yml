@@ -11,7 +11,6 @@ scrape_configs:
         secret_key: yourkey
         port: 9100
     relabel_configs:
-        # Only monitor instances with a Name starting with "kpdi"
       - source_labels: [__meta_ec2_public_ip]
         regex: '(.*)' #default value
         target_label: _address_
