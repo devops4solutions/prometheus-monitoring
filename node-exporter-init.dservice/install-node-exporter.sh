@@ -9,3 +9,5 @@ sudo chmod +x /etc/init.d/node_exporter
 sudo chmod +x /opt/node-exporter/node_exporter.sh
 chkconfig --add node_exporter
 sudo service node_exporter start
+sudo service node_exporter status
+
